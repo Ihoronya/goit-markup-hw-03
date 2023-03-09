@@ -60,6 +60,17 @@ img {
     background-color: var(--primary-bg-color);
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section2 {padding-top: 120px;}
+
+.section3 {
+    list-style: none;
+    display: flex;}
+
 .page-header {
 text-align: center;
 background: #ffffff;
@@ -231,10 +242,14 @@ list-style: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
+    width: 264px;
+    margin-top: 16px;
 }
 
 .footer {
     background-color: var(--footer-background-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -250,7 +265,6 @@ background-color: var(--footer-background-color);
 
 .advantages {
     display: flex;
-    padding-top: 120px;
 }
 
 .advantages-title {
@@ -301,15 +315,33 @@ background-color: var(--footer-background-color);
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color: var(--navigation);
+    margin-bottom: 72px;
+   }
+
+.section-gallery {
+list-style: none;
+display: flex;
+}
+
+.section-photo:not(:last-child) {
+margin-right: 24px;
 }
 
 .team-section {
-    background-color: var(--team-background-color);
+background-color: var(--team-background-color);
+text-align: center;
+}
+
+.team-card-photo {
+    margin-bottom: 32px;
 }
 
 .team-title-list {
-
     background-color: #FFFFFF;
+}
+
+.team-title-list:not(:last-child) {
+    margin-right: 24px;
 }
 
 .team-title {
@@ -320,6 +352,7 @@ background-color: var(--footer-background-color);
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color: var(--navigation);
+    margin-bottom: 72px;
 }
 
 .name {
@@ -328,6 +361,8 @@ background-color: var(--footer-background-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navigation);
+    margin-bottom: 8px;
+    margin-left: 16px;
 }
 
 .job {
@@ -335,6 +370,7 @@ background-color: var(--footer-background-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--job-color);
+    margin-bottom: 32px;
 }
 
 
