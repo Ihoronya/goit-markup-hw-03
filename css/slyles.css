@@ -82,8 +82,6 @@ border-bottom: 1px solid #e7e9fc;
 
 .adress {
     margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
     font-style: normal
 }
 
@@ -99,8 +97,6 @@ list-style: none;
     flex-direction: row;
     list-style: none;
     align-items: flex-start;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .adnvantage-list {
@@ -111,6 +107,7 @@ list-style: none;
 
 .feature {
     list-style: none;
+    width: calc((100% - 48px) / 4);
     margin: 0;
     padding: 0;
 }
@@ -129,29 +126,25 @@ list-style: none;
 
 
 .hero-btn {
-    width: 200px;
-    height: 50px;
-    font-family: 'Roboto';
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    display: inline-block;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin: 0 auto;
-    margin-top: 30px;
+    padding: 16px 32px;
     border: none;
+    
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #404BBF;
+    
 }
 
 .portfolio-btn {
@@ -172,7 +165,10 @@ list-style: none;
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     background-color: #4D5AE5;
+    border: 1px solid transparent;
 }
 
 .logo-up {
@@ -218,6 +214,9 @@ list-style: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navigation);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 
 }
 
@@ -236,6 +235,9 @@ list-style: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .connection:hover,
@@ -279,7 +281,6 @@ background-color: var(--footer-background-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-left: 16px;
     color: var(--accent-color)
 }
 
@@ -288,13 +289,7 @@ background-color: var(--footer-background-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--features-paragraf-color);
-    margin-bottom: 32px;
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
+
 }
 
 .hero-title {
@@ -353,6 +348,7 @@ text-align: center;
 
 .team-title-list {
     background-color: #FFFFFF;
+    padding-bottom: 32px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -380,7 +376,7 @@ text-align: center;
     letter-spacing: 0.02em;
     color: var(--navigation);
     margin-bottom: 8px;
-    margin-left: 16px;
+
 }
 
 .job {
@@ -388,7 +384,7 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--job-color);
-    margin-bottom: 32px;
+    
 }
 
 
@@ -403,8 +399,7 @@ text-align: center;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navigation);
-    margin-bottom: 8px;
-    margin-left: 16px;
+
 }
 
 .type-product {
@@ -412,8 +407,6 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--type-product-collor);
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
 
 .filters {
@@ -421,7 +414,6 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -433,22 +425,24 @@ text-align: center;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    column-gap: 24px;
+    row-gap: 48px;   
 }
 
 .project-card {
     max-width: 360px;
     background: #ffffff;
-    margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
-.project-card:not(:nth-child(3n)) {
-    margin-right: 24px;
+.project-card:nth-child(3n) {
+    margin-right: 0;
 }
+
 
 .border {
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-    padding-top: 32px;
+    padding: 32px 16px;
 }
